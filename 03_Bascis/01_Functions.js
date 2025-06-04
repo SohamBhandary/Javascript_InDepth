@@ -20,7 +20,7 @@ function addTwoNumbers(num1, num2) {
 // Call the function and log the result
 // console.log(addTwoNumbers(2, 2)); // Output: 4
 function userLoginMessage(username){
-    if(username===undefined){
+    if(!username){
         console.log("Please Enter Valid user name");
         
 
