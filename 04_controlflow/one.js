@@ -21,8 +21,35 @@
 
 // }
 
-const balance=1000
-if(balance>500){
-    console.log("Test");
+// const balance=870
+// if(balance<500){
+//     console.log("Test");
+    
+// }
+// else if(balance<750){
+//     console.log("Test2");
+    
+// }
+// else if(balance<1000){
+//     console.log("test3");
+    
+// }
+// else{
+//     console.log("test4");
+    
+// }
+
+
+const isUserloggedin =true
+const debitCard=true
+const loogedInFormGoogle=true
+const loogedInFormEmail=true
+
+if(isUserloggedin && debitCard){
+    console.log("Allowed to buy course");
+    
+}
+if(loogedInFormEmail || loogedInFormGoogle){
+    console.log("user can looged in");
     
 }
