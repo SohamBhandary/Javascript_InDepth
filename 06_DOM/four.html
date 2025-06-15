@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <Style>
+        *{
+             background-color: black;
+             color: wheat;
+        }
+      
+    </Style>
+</head>
+<body>
+    <ul class="lang">
+        <li>Javascript</li>
+
+    </ul>
+    <script>
+function addLang(lang){
+    const li = document.createElement("li")
+   li.appendChild(document.createTextNode(lang))
+   document.querySelector('.lang').appendChild(li)
+   
+
+}
+addLang("Java")
+addLang("Pyhton")
+
+const secondLang=document.querySelector("li:nth-child(2)")
+const newLi=document.createElement('li')
+newLi.textContent="Mojo"
+secondLang.replaceWith(newLi)
+
+
+const lastlang=document.querySelector("li:last-child")
+lastlang.remove()
+
+
+    </script>
+    
+</body>
+</html>
